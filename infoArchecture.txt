@@ -1,0 +1,20 @@
+DELETE AFTER DONE
+
+Home
+>NavBar
+>Center Text blurb
+
+About
+>NavBar
+>about me paragraph
+>technical skill review
+>education
+
+Projects
+>NavBar
+>topics
+
+NavBar
+>logo
+>Contact and About Links
+>Media Icons
