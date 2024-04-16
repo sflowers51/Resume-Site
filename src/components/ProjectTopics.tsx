@@ -1,13 +1,28 @@
-// ButtonContainerComponent.js
 import React from 'react';
 import ProjectTopic from './ProjectTopic';
 
-const ProjectTopics = () => {
+// Define the type for project topic
+interface ProjectTopicData {
+  id: number;
+  title: string;
+  projectlinks: { projectname: string; description: string }[];
+}
+
+interface ProjectTopicsProps {
+  topics: ProjectTopicData[];
+  onTopicClick: (topic: ProjectTopicData) => void;
+}
+
+const ProjectTopics: React.FC<ProjectTopicsProps> = ({ topics, onTopicClick }) => {
   return (
     <div className='flex flex-row gap-16'>
-      <ProjectTopic topicLineOne="Topic 1" topicLineTwo="Topic 1 Details" onClick={() => {}} />
-      <ProjectTopic topicLineOne="Topic 2" topicLineTwo="Topic 2 Details" onClick={() => {}} />
-      <ProjectTopic topicLineOne="Topic 3" topicLineTwo="Topic 3 Details" onClick={() => {}} />
+      {topics.map(topic => (
+        <ProjectTopic
+          key={topic.id}
+          title={topic.title}
+          onClick={() => onTopicClick(topic)}
+        />
+      ))}
     </div>
   );
 };

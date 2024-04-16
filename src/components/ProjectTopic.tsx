@@ -1,14 +1,14 @@
-type ProjectTopicProps = {
-  topicLineOne: string;
-  topicLineTwo: string;
-  onClick: () => void;
-};
+import React from 'react';
 
-const ProjectTopic = ({ topicLineOne, topicLineTwo, onClick }: ProjectTopicProps) => {
+interface ProjectTopicProps {
+  title: string;
+  onClick: () => void;
+}
+
+const ProjectTopic: React.FC<ProjectTopicProps> = ({ title, onClick }) => {
   return (
-    <div onClick={onClick} className="flex flex-col w-[290px] border h-[200px] rounded-lg items-center justify-center text-3xl hover:bg-white hover:text-[#393F40] cursor-pointer">
-      <p>{topicLineOne}</p>
-      <p>{topicLineTwo}</p>
+    <div onClick={onClick} className="flex flex-col w-[290px] border h-[200px] rounded-lg items-center justify-center text-3xl hover:bg-white hover:text-[#393F40] cursor-pointer text-center">
+      <p>{title}</p>
     </div>
   );
 };
