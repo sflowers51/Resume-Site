@@ -1,5 +1,5 @@
-import React from 'react';
-import ProjectTopic from './ProjectTopic';
+import React from "react";
+import ProjectTopic from "./ProjectTopic";
 
 // Define the type for project topic
 interface ProjectTopicData {
@@ -13,10 +13,13 @@ interface ProjectTopicsProps {
   onTopicClick: (topic: ProjectTopicData) => void;
 }
 
-const ProjectTopics: React.FC<ProjectTopicsProps> = ({ topics, onTopicClick }) => {
+const ProjectTopics: React.FC<ProjectTopicsProps> = ({
+  topics,
+  onTopicClick,
+}) => {
   return (
-    <div className='flex flex-row gap-16'>
-      {topics.map(topic => (
+    <div className="flex flex-row gap-16">
+      {topics.map((topic) => (
         <ProjectTopic
           key={topic.id}
           title={topic.title}

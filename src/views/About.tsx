@@ -7,7 +7,7 @@ const About = () => {
   return (
     <div className="h-full bg-[#393F40] text-white font-poppins flex flex-col items-center space-y-16">
       <Nav />
-      <AboutMe/>
+      <AboutMe />
       <TechnicalSkill />
       <Education />
     </div>
