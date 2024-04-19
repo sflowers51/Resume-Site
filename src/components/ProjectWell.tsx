@@ -4,6 +4,7 @@ import React from "react";
 interface ProjectLink {
   projectname: string;
   description: string;
+  link: string
 }
 
 interface ProjectWellProps {
@@ -15,7 +16,7 @@ const ProjectWell: React.FC<ProjectWellProps> = ({ content }) => {
     <div className="border w-[800px] min-h-[400px] rounded-lg grid grid-cols-2 grid-rows gap-6 p-16">
       {content.map((link, index) => (
         <div key={index} className="col-span-2">
-          <p className="text-4xl">{link.projectname}</p>
+          <a href={link.link} target="_blank" rel="noopener noreferrer" className="text-4xl">{link.projectname}</a>
           <p className="text-2xl">{link.description}</p>
         </div>
       ))}

@@ -5,7 +5,7 @@ import ProjectTopic from "./ProjectTopic";
 interface ProjectTopicData {
   id: number;
   title: string;
-  projectlinks: { projectname: string; description: string }[];
+  projectlinks: { projectname: string; description: string, link: string }[];
 }
 
 interface ProjectTopicsProps {

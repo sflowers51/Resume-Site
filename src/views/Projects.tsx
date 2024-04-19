@@ -7,7 +7,7 @@ import ProjectWell from "../components/ProjectWell";
 interface ProjectTopicData {
   id: number;
   title: string;
-  projectlinks: { projectname: string; description: string }[];
+  projectlinks: { projectname: string; description: string,  link: string }[];
 }
 
 const projectTopicsData: ProjectTopicData[] = [
@@ -16,12 +16,14 @@ const projectTopicsData: ProjectTopicData[] = [
     title: "Web Development",
     projectlinks: [
       {
-        projectname: "Asynce Audio App",
+        projectname: "Async Audio Web App",
         description: "Simple MP3 playing app.",
+        link:"https://github.com/Samuel-Flowers/CIS367-FA23-AsyncAudio.git",
       },
       {
         projectname: "FHU Faculty Trading Cards",
         description: "Webpage carousel of FHU faculty trading cards",
+        link:"https://github.com/Samuel-Flowers/CIS367-FA23-faculty-trading-cards.git"
       },
     ],
   },
@@ -32,6 +34,7 @@ const projectTopicsData: ProjectTopicData[] = [
       {
         projectname: "MOGI",
         description: "Mobile app team project based on the game priorities.",
+        link:"https://github.com/FHU/Priorities.git",
       },
     ],
   },
@@ -43,6 +46,7 @@ const projectTopicsData: ProjectTopicData[] = [
         projectname: "Fake News Detector",
         description:
           "Machine learning project that detects whether a news article is fake.",
+        link:"https://github.com/gavboler03/MLApplication.git"
       },
     ],
   },

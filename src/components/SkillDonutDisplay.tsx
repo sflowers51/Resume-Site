@@ -7,16 +7,16 @@ const SkillDonutDisplay = () => {
         <SkillDonut percentage={90} skill="JavaScript" />
         <SkillDonut percentage={90} skill="TailwindCSS" />
         <SkillDonut percentage={70} skill="React" />
-        <SkillDonut percentage={90} skill="Python" />
-        <SkillDonut percentage={70} skill="C#" />
-        <SkillDonut percentage={50} skill="SQL" />
+        <SkillDonut percentage={60} skill="Node JS" />
+        <SkillDonut percentage={80} skill=".NET MAUI" />
       </div>
       <div className="flex flex-row justify-center gap-x-10">
-        <SkillDonut percentage={89} skill="Data Analysis" />
+        <SkillDonut percentage={90} skill="Python" />
+        <SkillDonut percentage={70} skill="C#" />
+        <SkillDonut percentage={60} skill="SQL" />
+        <SkillDonut percentage={90} skill="Data Analysis" />
         <SkillDonut percentage={60} skill="Docker" />
         <SkillDonut percentage={60} skill="Django" />
-        <SkillDonut percentage={60} skill="Node JS" />
-        <SkillDonut percentage={80} skill="Ethical Hacking" />
       </div>
     </div>
   );
