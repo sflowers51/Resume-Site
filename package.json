@@ -1,7 +1,6 @@
 {
   "homepage": "https://sflowers51.github.io/resume-site/",
-  "name": "@sflowers51/resume-site",
-  "private": true,
+  "name": "resume-site",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -19,6 +18,7 @@
     "axios": "^1.6.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router": "^6.22.3",
     "react-router-dom": "^6.22.3"
   },
   "devDependencies": {
