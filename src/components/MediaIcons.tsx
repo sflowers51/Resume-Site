@@ -14,7 +14,7 @@ const MediaIcons = () => {
       </span>
       <span className="text-2xl text-white items-center grid grid-cols-2 ">
         <FontAwesomeIcon icon={faEnvelope} />
-        <a href="#" className="text-sm">
+        <a href="mailto:samf3653@gmail.com" title="samf3653@gmail.com" className="text-sm">
           Gmail
         </a>
       </span>
