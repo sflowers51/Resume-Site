@@ -8,16 +8,16 @@ const Nav = () => {
   return (
     <>
       <div className="bg-[#393F40] w-full text-white p-4 z-50 flex flex-row justify-between pt-[15px] px-[25px] text-2xl absolute pl-5 ">
-        <Link to="/">SF</Link>
+        <Link to="/" className="hover:text-[#CCCCCC]">SF</Link>
         <div className="relative flex flex-row gap-24 -z-10">
-          <Link to="/">Home</Link>
-          <div className="relative">
+          <Link to="/" className="hover:text-[#CCCCCC] hover:underline">Home</Link>
+          <div className="relative hover:text-[#CCCCCC] hover:underline">
             <button onClick={() => setIsMenuOpen((prev: boolean) => !prev)}>
               Contact
             </button>
             {isMenuOpen && <MediaIcons />}
           </div>
-          <Link to="/about">About</Link>
+          <Link to="/about" className="hover:text-[#CCCCCC] hover:underline">About</Link>
         </div>
       </div>
     </>
