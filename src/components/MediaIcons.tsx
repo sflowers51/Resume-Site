@@ -5,7 +5,7 @@ import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 const MediaIcons = () => {
   // Define your media icons here
   return (
-    <div className="flex flex-col absolute gap-y-5 mt-5 w-48 z-10 border p-5 rounded-tr-lg rounded-bl-lg rounded-br-lg">
+    <div className="flex flex-col absolute gap-y-5 mt-5 w-48 z-10 border p-5 rounded-tr-lg rounded-bl-lg rounded-br-lg bg-[#393F40]">
       <span className="text-2xl text-white hover:text-[#CCCCCC] items-center grid grid-cols-2">
         <FontAwesomeIcon icon={faGithub} />
         <a href="https://github.com/sflowers51" className="text-sm " target="_blank" rel="noopener noreferrer">
