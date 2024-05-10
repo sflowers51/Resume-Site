@@ -13,7 +13,7 @@ interface ProjectTopicData {
 const projectTopicsData: ProjectTopicData[] = [
   {
     id: 1,
-    title: "Web Development",
+    title: "Web/Mobile App Development",
     projectlinks: [
       {
         projectname: "Async Audio Web App",
@@ -22,20 +22,47 @@ const projectTopicsData: ProjectTopicData[] = [
       },
       {
         projectname: "FHU Faculty Trading Cards",
-        description: "Webpage carousel of FHU faculty trading cards",
+        description: "Webpage carousel of FHU faculty trading cards.",
         link:"https://github.com/Samuel-Flowers/CIS367-FA23-faculty-trading-cards.git"
+      },
+      {
+        projectname: "BotsCryOut Backend",
+        description: "Simply made backend for an app concept called 'BotsCryOut.'",
+        link:"https://github.com/sflowers51/CIS467-SP24-lab1.git",
+      },
+      {
+        projectname: "Facade App",
+        description: "Mobile app project, using .NET MAUI, which is like Wordle, but with hexcodes. ",
+        link:"https://github.com/sflowers51/CIS388-FA23-facade.git"
+      },
+      {
+        projectname: "SunnySide Landing Page",
+        description: "Mock landing page for fictional company SunnySide. Project for web development class and challenge from Frontend Mentor.",
+        link:"https://github.com/sflowers51/CIS367-FA23-lab1.git",
       },
     ],
   },
   {
     id: 2,
-    title: "Mobile App Development",
+    title: "Team Projects",
     projectlinks: [
       {
         projectname: "MOGI",
         description: "Mobile app team project based on the game priorities.",
         link:"https://github.com/FHU/Priorities.git",
       },
+      {
+        projectname: "BeKindly.Today Backend Team",
+        description: "The backend for a DevOps class project which was a web application based on BeReal.",
+        link:"https://github.com/FHU/BeKindlyTodayBackend.git"
+
+      },
+      {
+        projectname: "Scriptured Prayer",
+        description: "FHU 2024 Computer Science Capstone web application built to improve prayer habits.",
+        link:"https://github.com/PrayTeam/scriptured-prayer.git"
+      },
+
     ],
   },
   {
