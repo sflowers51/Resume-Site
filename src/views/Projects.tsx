@@ -95,9 +95,8 @@ const Projects: React.FC = () => {
   };
 
   return (
-    <div className="min-h-[101vh] pb-10 bg-[#393F40] text-white font-poppins flex flex-col items-center gap-10">
+    <div className="min-h-screen pb-10 bg-[#393F40] text-white font-poppins flex flex-col items-center gap-10">
       <Nav />
-      <h1 className="text-4xl">Topics</h1>
       <ProjectTopics
         topics={projectTopicsData}
         onTopicClick={handleTopicClick}
