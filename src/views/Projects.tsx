@@ -95,7 +95,7 @@ const Projects: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen pb-10 bg-[#393F40] text-white font-poppins flex flex-col items-center gap-10">
+    <div className="pb-10 text-white font-poppins flex flex-col items-center gap-10">
       <Nav />
       <ProjectTopics
         topics={projectTopicsData}
