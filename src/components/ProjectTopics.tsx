@@ -1,12 +1,11 @@
 import React from "react";
 import ProjectTopic from "./ProjectTopic";
-import { Link } from "react-scroll";
 
 // Define the type for project topic
 interface ProjectTopicData {
   id: number;
   title: string;
-  projectlinks: { projectname: string; description: string; link: string }[];
+  projectlinks: { projectname: string; description: string; link: string; demo: string }[];
 }
 
 interface ProjectTopicsProps {
@@ -19,22 +18,16 @@ const ProjectTopics: React.FC<ProjectTopicsProps> = ({
   onTopicClick,
 }) => {
   return (
-    <div className="my-20">
-      <div className="md:text-4xl text-2xl text-center">Topics</div>
-      <div className="flex md:flex-row flex-col md:gap-16 md:m-10 m-5 gap-5">
-        {topics.map((topic) => (
-          <Link
-            key={topic.id}
-            to="ProjectWell"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-            onClick={() => onTopicClick(topic)}
-          >
-            <ProjectTopic title={topic.title} onClick={() => {}} />
-          </Link>
-        ))}
+    <div className="lg:w-[800px] md:w-[600px] w-[400px] mt-16">
+      <div className="lg:text-4xl md:text-3xl text-2xl text-center m-10">Topics</div>
+      <div className="flex md:flex-row flex-col items-center lg:gap-10 gap-4">
+      {topics.map((topic) => (
+        <ProjectTopic
+          key={topic.id}
+          title={topic.title}
+          onClick={() => onTopicClick(topic)}
+        />
+      ))}
       </div>
     </div>
   );
