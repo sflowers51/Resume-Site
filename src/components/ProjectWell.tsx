@@ -14,7 +14,7 @@ interface ProjectWellProps {
 
 const ProjectWell: React.FC<ProjectWellProps> = ({ content }) => {
   return (
-    <div className="lg:w-[800px] md:w-[600px] w-[400px] border rounded-lg grid grid-cols-2 grid-rows gap-y-10  lg:p-12 md:p-10 p-5 m-10">
+    <div className="lg:w-[800px] md:w-[600px] w-[300px] border rounded-lg grid grid-cols-2 grid-rows gap-y-10  lg:p-12 md:p-10 p-5 m-10">
       {content.map((link, index) => (
         <div key={index} className="col-span-2">
           <a href={link.link} target="_blank" rel="noopener noreferrer" className="lg:text-4xl md:text-2xl text-xl hover:text-[#CCCCCC]">{link.projectname}</a>
