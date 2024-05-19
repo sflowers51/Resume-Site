@@ -2,7 +2,7 @@ import culogo from "../assets/img/culogo.png";
 import fhu from "../assets/img/fhu.png";
 const EducationCard = () => {
   return (
-    <div className="lg:w-[900px] lg:h-[400px] md:w-[550px] w-[350px] h-[250px] gap-3 grid grid-cols-2 grid-rows-2">
+    <div className="lg:w-[900px] lg:h-[400px] md:w-[550px] w-[350px] h-[250px] gap-3 grid grid-cols-2 grid-rows-2 ">
       <div className="bg-white rounded-lg items-center justify-center flex ">
         <img src={culogo} className="md:w-[350px] w-[250px] p-5" />
       </div>
