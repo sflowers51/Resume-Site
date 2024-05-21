@@ -27,7 +27,7 @@ const ProjectWell: React.FC<ProjectWellProps> = ({ content }) => {
               
               target="_blank"
               rel="noopener noreferrer"
-              className="lg:text-4xl md:text-2xl text-xl hover:text-[#CCCCCC]"
+              className="lg:text-3xl md:text-2xl text-xl hover:text-[#CCCCCC]"
             >
               {link.projectname}
             </a>
@@ -40,7 +40,7 @@ const ProjectWell: React.FC<ProjectWellProps> = ({ content }) => {
               demo
             </a> */}
           </div>
-          <p className="md:text-2xl">{link.description}</p>
+          <p className="md:text-xl">{link.description}</p>
         </div>
       ))}
     </div>
